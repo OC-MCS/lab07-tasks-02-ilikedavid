@@ -1,8 +1,16 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <vector>
+#include <fstream>
+#include "RetailItem.h"
+using namespace std;
 
-// code to test your RetailItem class goes here
 
 int main()
 {
+
+
 
 	return 0;
 }
