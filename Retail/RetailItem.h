@@ -1,6 +1,7 @@
 #ifndef retailitem_h
 #define retailitem_h
 
+#pragma once
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -11,10 +12,10 @@ class RetailItem
 private:
 	string description;
 	int unitsOnHand;
-	int price;
+	double price;
 public:
 	RetailItem();
-	RetailItem(string, int, int);
+	RetailItem(string, int, double);
 	string getDescription();
 	int getPrice();
 	int getUnits();

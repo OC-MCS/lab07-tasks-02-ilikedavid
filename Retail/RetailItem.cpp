@@ -12,7 +12,7 @@ RetailItem::RetailItem()
 	price = 0;
 }
 
-RetailItem::RetailItem(string d, int u, int p)
+RetailItem::RetailItem(string d, int u, double p)
 {
 	description = d;
 	unitsOnHand = u;
@@ -36,6 +36,6 @@ int RetailItem::getPrice()
 
 float RetailItem::getStockValue()
 {
-	float val = unitsOnHand * price;
+	float val = static_cast<float>(unitsOnHand * price);
 	return val;
 }
